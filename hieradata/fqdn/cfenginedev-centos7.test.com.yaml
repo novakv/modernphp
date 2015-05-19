@@ -1,0 +1,34 @@
+---
+classes:
+  - role::modernphp
+  - interface
+  #- exercises::winkelwagentje
+  #- exercises::winkelwagentjeoop
+  - exercises::winkelwagentjeoopenhanced
+
+localrepos::files:
+  /etc/yum.repos.d/remi.repo:
+    source: 'puppet:///modules/localrepos/remi.repo'
+
+php::packages:
+  - unzip
+  - git
+  - php
+  - php-gd
+  - php-mbstring
+  - php-mcrypt
+  - php-mysqlnd
+  - php-mysql
+  - php-opcache
+  - php-pdo
+  - php-bcmath
+  - php-cli
+  - php-common
+  - php-php-gettext
+  - php-xml
+  - php-tcpdf
+  - php-tidy
+  - php-xml
+  - php-snmp
+  - php-soap
+  - php-xdebug
